@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Para Hadassa 🌷</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="petals"></div>
+
+<section class="hero">
+  <p class="eyebrow">um presente feito com carinho</p>
+  <h1>Para você,<br><span>Hadassa</span> 🌷</h1>
+  <p class="intro">Porque algumas pessoas merecem receber flores mesmo quando elas não cabem em um buquê.</p>
+  <button id="open">✿ Abrir meu presente ✿</button>
+  <small>toque para começar</small>
+</section>
+
+<section class="bouquet hidden" id="bouquet">
+  <p class="eyebrow">flores para você</p>
+  <h2>Um buquê de lírios rosas</h2>
+  <div class="lily-bouquet" aria-label="Buquê de lírios rosas">
+    <svg class="bouquet-art" viewBox="0 0 700 470" role="img" aria-label="Buquê de lírios rosas">
+      <defs>
+        <linearGradient id="petalPink" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#ffd0e1"/>
+          <stop offset=".55" stop-color="#f48bb3"/>
+          <stop offset="1" stop-color="#df5d8d"/>
+        </linearGradient>
+        <linearGradient id="leafGreen" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#82b86b"/>
+          <stop offset="1" stop-color="#3d7747"/>
+        </linearGradient>
+        <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+          <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#8b4b68" flood-opacity=".18"/>
+        </filter>
+      </defs>
+
+      <!-- folhas e caules -->
+      <g stroke="#4f8754" stroke-width="7" stroke-linecap="round" fill="none">
+        <path d="M350 390 C345 320 340 245 345 175"/>
+        <path d="M350 390 C300 320 250 255 220 185"/>
+        <path d="M350 390 C405 320 460 255 500 185"/>
+        <path d="M350 390 C290 335 205 320 130 290"/>
+        <path d="M350 390 C420 335 505 320 570 290"/>
+      </g>
+      <g fill="url(#leafGreen)" filter="url(#softShadow)">
+        <path d="M318 330 C260 325 205 285 165 230 C230 240 285 270 318 330Z"/>
+        <path d="M382 330 C440 325 495 285 535 230 C470 240 415 270 382 330Z"/>
+        <path d="M305 365 C245 360 185 345 125 300 C200 295 260 315 305 365Z"/>
+        <path d="M395 365 C455 360 515 345 575 300 C500 295 440 315 395 365Z"/>
+        <path d="M345 315 C300 260 290 215 305 160 C350 205 360 260 345 315Z"/>
+      </g>
+
+      <!-- lírio 1 -->
+      <g transform="translate(345 120)" filter="url(#softShadow)">
+        <g fill="url(#petalPink)" stroke="#d95c89" stroke-width="2">
+          <path d="M0 0 C-42 -18 -64 -62 -36 -78 C-12 -90 0 -55 0 0Z"/>
+          <path d="M0 0 C-18 -45 -8 -88 18 -88 C42 -88 36 -48 0 0Z"/>
+          <path d="M0 0 C20 -44 54 -64 68 -43 C82 -21 46 3 0 0Z"/>
+          <path d="M0 0 C44 3 73 26 61 49 C49 70 18 48 0 0Z"/>
+          <path d="M0 0 C21 40 18 77 -8 81 C-35 85 -38 45 0 0Z"/>
+          <path d="M0 0 C-25 37 -61 42 -70 18 C-79 -6 -44 -22 0 0Z"/>
+        </g>
+        <circle r="10" fill="#f4a21a"/>
+        <g stroke="#f1a21b" stroke-width="3" stroke-linecap="round">
+          <path d="M-5 3 L-30 30"/><path d="M5 3 L30 30"/><path d="M-3 -4 L-14 -36"/>
+          <path d="M3 -4 L15 -37"/><path d="M0 5 L0 38"/>
+        </g>
+        <g fill="#9d3c65">
+          <circle cx="-31" cy="31" r="4"/><circle cx="31" cy="31" r="4"/><circle cx="-14" cy="-37" r="4"/>
+          <circle cx="15" cy="-38" r="4"/><circle cx="0" cy="39" r="4"/>
+        </g>
+      </g>
+
+      <!-- lírio 2 -->
+      <g transform="translate(215 185) scale(.78) rotate(-12)" filter="url(#softShadow)">
+        <use href="#lilyShape"/>
+      </g>
+      <!-- lírio 3 -->
+      <g transform="translate(485 185) scale(.78) rotate(12)" filter="url(#softShadow)">
+        <use href="#lilyShape"/>
+      </g>
+      <!-- lírio 4 -->
+      <g transform="translate(135 270) scale(.58) rotate(-22)" filter="url(#softShadow)">
+        <use href="#lilyShape"/>
+      </g>
+      <!-- lírio 5 -->
+      <g transform="translate(565 270) scale(.58) rotate(22)" filter="url(#softShadow)">
+        <use href="#lilyShape"/>
+      </g>
+
+      <!-- pequeno buquê frontal -->
+      <path d="M245 360 L455 360 L405 455 L295 455 Z" fill="#e9a9c2" opacity=".96"/>
+      <path d="M270 360 L430 360 L402 450 L298 450 Z" fill="#f4c7d8" opacity=".72"/>
+      <text x="350" y="420" text-anchor="middle" fill="#fff" font-size="30" font-family="Georgia" font-style="italic">H</text>
+
+      <!-- definição reutilizável para os lírios menores -->
+      <g id="lilyShape">
+        <g fill="url(#petalPink)" stroke="#d95c89" stroke-width="2">
+          <path d="M0 0 C-42 -18 -64 -62 -36 -78 C-12 -90 0 -55 0 0Z"/>
+          <path d="M0 0 C-18 -45 -8 -88 18 -88 C42 -88 36 -48 0 0Z"/>
+          <path d="M0 0 C20 -44 54 -64 68 -43 C82 -21 46 3 0 0Z"/>
+          <path d="M0 0 C44 3 73 26 61 49 C49 70 18 48 0 0Z"/>
+          <path d="M0 0 C21 40 18 77 -8 81 C-35 85 -38 45 0 0Z"/>
+          <path d="M0 0 C-25 37 -61 42 -70 18 C-79 -6 -44 -22 0 0Z"/>
+        </g>
+        <circle r="10" fill="#f4a21a"/>
+        <g stroke="#f1a21b" stroke-width="3" stroke-linecap="round">
+          <path d="M-5 3 L-30 30"/><path d="M5 3 L30 30"/><path d="M-3 -4 L-14 -36"/>
+          <path d="M3 -4 L15 -37"/><path d="M0 5 L0 38"/>
+        </g>
+        <g fill="#9d3c65">
+          <circle cx="-31" cy="31" r="4"/><circle cx="31" cy="31" r="4"/><circle cx="-14" cy="-37" r="4"/>
+          <circle cx="15" cy="-38" r="4"/><circle cx="0" cy="39" r="4"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <p>Cada lírio representa um pedacinho representa um pedacinho do carinho que tenho por você.</p>
+  <button class="outline" id="letterBtn">💌 Ler minha carta</button>
+</section>
+
+<section class="letter hidden" id="letter">
+  <div class="card">
+    <div class="ornament">✿</div>
+    <p class="eyebrow">uma carta para você</p>
+    <h2>Querida Hadassa,</h2>
+    <p>Queria lhe dedicar todo o meu carinho pela incrível amizade e pela irmã que você é para mim. Nos momentos difíceis, você estava lá para ser meu ombro e meus ouvidos.</p>
+    <p>Pedi a Deus por uma ajuda, e Ele me trouxe a minha cura, que é você. Agradeço por você ter entrado na minha vida e, hoje, quero lhe dedicar todo o meu amor e carinho.</p>
+    <p>Que você tenha uma vida maravilhosa, cheia de momentos felizes, sonhos realizados e muitas bênçãos.</p>
+    <p class="final">Feliz vida, nega do meu coração! ❤️</p>
+    <p class="signature">Amo-te.</p>
+    <div class="ornament">♡　♡　♡</div>
+  </div>
+</section>
+
+<section class="memories hidden" id="memories">
+  <p class="eyebrow">alguns momentos</p>
+  <h2>Um pedacinho de você</h2>
+  <div class="grid">
+    <figure><img src="images/hadassa-01.jpg" alt="Hadassa sorrindo"><figcaption>Seu sorriso sempre deixa tudo mais bonito. ♡</figcaption></figure>
+    <figure><img src="images/hadassa-02.png" alt="Hadassa"><figcaption>Uma pessoa especial, do jeitinho que é.</figcaption></figure>
+    <figure><img src="images/hadassa-03.png" alt="Hadassa"><figcaption>Que você nunca perca essa luz. ♡</figcaption></figure>
+    <figure class="couple"><img src="images/nos-dois.png" alt="Hadassa e eu juntos"><figcaption>Um dos nossos momentos juntos. Que venham muitos outros. ❤️</figcaption></figure>
+  </div>
+</section>
+
+<section class="end hidden" id="end">
+  <div>🌷</div>
+  <h2>Feliz vida, Hadassa!</h2>
+  <p>Que nunca faltem flores no seu caminho,<br>nem motivos para sorrir.</p>
+  <span>Com carinho, de alguém que ama muito a sua amizade. ♡</span>
+</section>
+
+<button class="music" id="musicBtn">♫</button>
+<audio id="audio" loop preload="auto"><source src="from-the-start.mp3" type="audio/mpeg"></audio>
+<footer>feito com carinho para Hadassa 🌷</footer>
+<script src="script.js"></script>
+</body>
+</html>
